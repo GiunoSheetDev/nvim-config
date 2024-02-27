@@ -4,7 +4,7 @@ local lsp_zero = require('lsp-zero')
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer', "clangd", "jedi_language_server"},
+  ensure_installed = {'tsserver', 'rust_analyzer', "clangd", "jedi_language_server", "jdtls"},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()

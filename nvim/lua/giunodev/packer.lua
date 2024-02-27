@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
 
   use("tpope/vim-fugitive")
   
-  use 'm4xshen/autoclose.nvim'
+  use ('m4xshen/autoclose.nvim')
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+  use ("https://github.com/lukas-reineke/indent-blankline.nvim")
   use {
 		  "startup-nvim/startup.nvim",
 		  requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
